@@ -6,7 +6,7 @@ class Auth implements AuthInterface {
         return false;
     }
     register(user: { email: string; password: string; username: string }, dataStore: DataStoreInterface): boolean {
-        return false;
+        const loggedIn: boolean = dataStore.signup({});
     }
 }
 export default Auth;

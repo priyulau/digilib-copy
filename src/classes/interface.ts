@@ -3,10 +3,6 @@ export interface ViewInterface {
     updateBookView(book: BookInterface): void
     refreshView(section: string, DOMElement: HTMLDivElement): void
 }
-
-export interface DataStoreInterface {
-
-}
 export interface UserInterface {
     addUser(user: { firstName: string, lastName: string, email: string }, datastore: DataStoreInterface): boolean;
     getUserByID(id: number): UserInterface
