@@ -12,12 +12,16 @@ formEl.addEventListener('submit', e => {
     const newUser = {
         password: passwordEl.value,
         email: emailEl.value,
-        username: username.value
+        // username: username.value
     }
 
     const registerAuth = new Auth();
 
-    if (registerAuth.register(newUser, '')) {
-        registerAuth.login({email: newUser.email, password: newUser.password}, '')
-    }
+    registerAuth.register (newUser, new Supabase())
+
+    registerAuth.register(newUser, new Firebase())
+
+//     if (registerAuth.register(newUser, '')) {
+//         registerAuth.login({email: newUser.email, password: newUser.password}, '')
+//     }
 })
