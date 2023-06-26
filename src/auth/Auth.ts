@@ -10,4 +10,5 @@ class Auth implements AuthInterface {
         return dataStore.signup(user);
     }
 }
+
 export default Auth;

@@ -1,4 +1,3 @@
-// Silence is golden
 import Library from "./classes/Library.ts";
 import Staff from "./classes/Staff.ts";
 import DataStore from "./classes/DataStore.ts";
